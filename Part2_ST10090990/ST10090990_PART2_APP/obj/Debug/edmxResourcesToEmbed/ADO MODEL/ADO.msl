@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Part2dbModelStoreContainer" CdmEntityContainer="Part2dbEntities">
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="Part2dbModel.Module">
+        <MappingFragment StoreEntitySet="Modules">
+          <ScalarProperty Name="ModCode" ColumnName="ModCode" />
+          <ScalarProperty Name="ModName" ColumnName="ModName" />
+          <ScalarProperty Name="Credits" ColumnName="Credits" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="NumWeeks" ColumnName="NumWeeks" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="SelfStudy" ColumnName="SelfStudy" />
+          <ScalarProperty Name="Remainder" ColumnName="Remainder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Part2dbModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="StudentNo" ColumnName="StudentNo" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
